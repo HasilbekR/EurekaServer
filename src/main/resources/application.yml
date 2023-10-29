@@ -3,9 +3,9 @@ server:
 
 eureka:
   instance:
-    hostname: 164.92.206.217
+    hostname: 134.209.20.129
   client:
-    registry-with.eureka: false
+    register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultUrl: https://${eureka.instance.hostname}:${server.port}
+      defaultUrl: http://${eureka.instance.hostname}:${server.port}/eureka/
